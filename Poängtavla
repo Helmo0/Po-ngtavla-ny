@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poängtavla</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+            width: 800px;
+            height: 400px;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        iframe {
+            position: absolute;
+            top: -100px;   /* Flytta upp för att beskära */
+            left: -50px;   /* Flytta vänster för att beskära */
+            width: 1200px;  /* Justera storlek */
+            height: 800px;  /* Justera storlek */
+            transform: scale(1.5); /* Zooma in för att beskära */
+            transform-origin: top left;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <iframe src="https://keepthescore.com/board/tpvndsvgqckje"></iframe>
+    </div>
+</body>
+</html>
